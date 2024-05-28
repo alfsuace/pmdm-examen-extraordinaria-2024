@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="item_picture_dimension">100dp</dimen>
+
+
+    <dimen name="margin_ten">10dp</dimen>
+    <dimen name="margin_top_ten">10dp</dimen>
+    <dimen name="margin_top_thirty">30dp</dimen>
+</resources>

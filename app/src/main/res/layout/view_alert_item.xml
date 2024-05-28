@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/item_picture"
+        android:layout_width="@dimen/item_picture_dimension"
+        android:layout_height="@dimen/item_picture_dimension"
+        android:src="@drawable/ic_android_black_placeholder"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/item_alert_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="alert type"
+        app:layout_constraintStart_toEndOf="@id/item_picture"
+        app:layout_constraintTop_toTopOf="@id/item_picture"
+        android:layout_marginTop="@dimen/margin_top_ten"
+        />
+
+    <TextView
+        android:id="@+id/item_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="dd/mm/yy"
+        app:layout_constraintStart_toStartOf="@id/item_alert_type"
+        app:layout_constraintTop_toBottomOf="@id/item_alert_type"
+        android:layout_marginTop="@dimen/margin_top_ten"/>
+    <TextView
+        android:id="@+id/item_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/item_date"
+        app:layout_constraintStart_toStartOf="@id/item_date"
+        android:text="lore ipsum añfjñalskjfñalsdjfñ"
+        android:maxLines="@integer/material_motion_duration_short_2"
+        android:layout_marginTop="@dimen/margin_top_ten"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
