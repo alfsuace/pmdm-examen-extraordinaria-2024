@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation"
+    app:startDestination="@id/listAlertFragment"
+    >
+
+    <fragment
+        android:id="@+id/listAlertFragment"
+        android:name="com.iesam.alertsfood.alerts.presentation.list.ListAlertFragment"
+        android:label="ListAlertFragment" >
+        <action
+            android:id="@+id/action_listAlertFragment_to_alertDetailFragment"
+            app:destination="@id/alertDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/alertDetailFragment"
+        android:name="com.iesam.alertsfood.alerts.presentation.detail.AlertDetailFragment"
+        android:label="AlertDetailFragment" >
+        <argument
+            android:name="alertId"
+            app:argType="string" />
+    </fragment>
+</navigation>
